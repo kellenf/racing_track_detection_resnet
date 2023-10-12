@@ -80,6 +80,7 @@ TrackDetectionNode::TrackDetectionNode(const std::string& node_name,
   this->get_parameter("model_path", model_path_);
   this->get_parameter("sub_img_topic", sub_img_topic_);
 
+  RCLCPP_WARN(rclcpp::get_logger("TrackDetectionNode"), model_path_);
 
   if (Init() != 0) {
     RCLCPP_ERROR(rclcpp::get_logger("TrackDetectionNode"), "Init failed!");
