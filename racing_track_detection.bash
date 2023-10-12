@@ -1,0 +1,2 @@
+source install/setup.bash
+ros2 launch racing_track_detection_resnet racing_track_detection_resnet.launch.py
